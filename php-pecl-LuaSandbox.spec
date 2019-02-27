@@ -13,11 +13,11 @@ URL: https://www.mediawiki.org/wiki/LuaSandbox
 Source0: https://github.com/wikimedia/mediawiki-php-luasandbox/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: %{basepkg}-devel
+BuildRequires: lua-devel
 BuildRequires: automake
 BuildRequires: gcc
 Requires:      php(zend-abi) = %{php_zend_api}
 Requires:      php(api) = %{php_core_api}
-Requires: lua-devel
 Provides:     php-pecl(hexmode/%{pecl_name}) = %{version}
 Provides:     php-pecl(hexmode/%{pecl_name})%{?_isa}  = %{version}
 
